@@ -1,325 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/layout.css">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Design</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        table {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 90%;
+          margin: 0 auto;
+        }
+        
+        table td, table th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+        
+        table tr:nth-child(even){background-color: #f2f2f2;}
+        
+        table tr:hover {background-color: #ddd;}
+        
+        table th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #4CAF50;
+          color: white;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="wrapper">
-        <div class="main-content clearfix">
-          <div class="logo-wrapper">
-            <div class="logo">
-              <img class="logo-img" src="./images/logo.png" alt="logo">
-            </div>
-            <div class="search-form">
-              <div class="search-input-wrapper">
-                <input class="search-input" type="text" placeholder="Search by Term, Member, or Entry Title">
-                <button class="icon cross-icon">
-                  <img src="./images/search-x.png" alt="clear">
-                </button>
-                <button class="icon search-icon">
-                  <img src="./images/search-icon.png" alt="search">
-                </button>
-              </div>
-              <button class="search-btn">
-                <span class="search-btn-text">SEARCH</span>
-              </button>
-            </div>
-          </div>
-          <nav class="nav-bar">
-            <h3 class="nav-bar-heading">Joe Burros</h3>
-
-            <ul class="nav-items">
-              <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Settings</a>
-              </li>
-              <li class="nav-item last">
-                <a href="#" class="nav-link">Logout</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div class="menu-wrapper">
-        <div class="main-content clearfix">
-          <ul class="menu-items">
-            <li class="menu-item first active">
-              <a href="#" class="menu-link">Create New Entry</a>
-            </li>
-            <li class="menu-item">
-              <a href="#" class="menu-link">My Topic Boxes</a>
-            </li>
-            <li class="menu-item">
-              <a href="#" class="menu-link">Friends</a>
-            </li>
-            <li class="menu-item">
-              <a href="#" class="menu-link">Invite New Member</a>
-            </li>
-          </ul>
-          <div class="notification">
-            <a href="#" class="notice-wrapper active">
-              <span class="notice-icon-wrapper ">
-                <img class="active-icon" src="./images/container-icon.png" alt="lists">
-                <img class="inactive-icon" src="./images/container-icon-inactive.png" alt="lists">
-              </span>
-              <span class="notice">Topic Boxes Invites - 
-                  <span class="notice-count">2</span>
-              </span>
-            </a>
-            <a href="#" class="notice-wrapper">
-              <span class="notice-icon-wrapper">
-                <img class="active-icon" src="./images/avatar-icon.png" alt="avatar">
-                <img class="inactive-icon" src="./images/avatar-icon-inactive.png" alt="avatar">
-              </span>
-              <span class="notice">Friend Requests - 
-                <span class="notice-count">0</span>  
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <div class="container-body">
-      <div class="main-content clearfix">
-        <div class="aside left">
-          <div>
-            <div class="aside-header"><span>Recent Searches</span></div>
-            <div>
-              <div class="aside-item">
-                <p>Nick Cave and the Bad Seeds</p>
-                <span class="aside-item-icon"><img src="./images/download-icon.png" alt="download"></span>
-              </div>
-              <div class="aside-item">
-                <p>African Animals</p>
-                <span class="aside-item-icon"><img src="./images/download-icon.png" alt="download"></span>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="aside-header"><span>Recent Searches</span></div>
-            <div>
-              <div class="aside-item">
-                <p>Different versions of the Tristan Und Isolde Prelude</p>
-                <span class="aside-item-icon"><img src="./images/drawer-icon.png"></span>
-              </div>
-              <div class="aside-item">
-                <p>Music</p>
-                <span class="aside-item-icon"><img src="./images/drawer-icon.png"></span>
-              </div>
-              <div class="aside-item">
-                <p >Guitar</p>
-                <span class="aside-item-icon"><img src="./images/drawer-icon.png"></span>
-              </div>
-              <div class="aside-item">
-                <p >Bob Cohen</p>
-                <span class="aside-item-icon"><img src="./images/drawer-icon.png"></span>
-              </div>
-              <div class="aside-item">
-                <p >Mark Schnack</p>
-                <span class="aside-item-icon"><img src="./images/drawer-icon.png"></span>
-              </div>
-              <div class="aside-item">
-                <p >jefferson Dickey</p>
-                <span class="aside-item-icon"><img src="./images/drawer-icon.png"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="entries">
-          <h1 class="entries-title">Entries</h1>
-          <div class="entries-body">
-            <div class="entries-heading">
-              <div class="entries-type">
-                <div class="background-element"></div>
-                <div class="entries-type-title "><span>All Entries</span></div>
-                <div class="clearfix">
-                  <div class="entries-wrapper">
-                    <div class="entry-tab"><span>Members</span></div>
-                  </div>
-                  <div class="entries-wrapper">
-                    <div class="entry-tab"><span>Friends</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="entries-type second">
-                <div class="background-element"></div>
-                <div class="entries-type-title"><span>Subscribed</span></div>
-                <div class="clearfix">
-                  <div class="entries-wrapper">
-                    <div class="entry-tab"><span>New Entries</span></div>
-                  </div>
-                  <div class="entries-wrapper ">
-                    <div class="entry-tab"><span>New Comments</span></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="entries-content">
-              <div class="entry-list">
-                <div class="entry clearfix">
-                  <div class="entry-img-wrapper">
-                    <img class="entry-img" src="./images/image-1.png" alt="Alan Cow">
-                  </div>
-                  <div class="entry-description">
-                    <div class="entry-title ">Day for Night by Francois Truffaut, a ground breaking film</div>
-                    <div class="by">
-                      by
-                      <span class="description-item blue bold">Alan Cow</span>
-                      <span class="description-item " > February 10, 2012 </span>
-                      <span class="description-item last green bold">Subscribed</span>
-
-                    </div>  
-                   
-                      From Topic Box :
-                      <span class="font-blue font-bold">My Favorite Movies</span>
-                   
-                  </div>
-                </div>
-                <div class="entry clearfix">
-                  <div class="entry-img-wrapper">
-                    <img class="entry-img" src="./images/image-2.png" alt="Mary Pilot">
-                  </div>
-                  <div class="entry-description">
-                    <div class="blue bold">NEW ENTRY !</div>
-                    <div class="entry-title ">Blade Runner, The Director's Cut</div>
-                    <div class="by">
-                      by
-                      <span class="description-item blue bold">Mary Pilot </span>
-                      <span class="description-item last">February 8, 2012</span>
-
-                    </div>  
-                   
-                      From Topic Box :
-                      <span class="font-blue font-bold">My Favorite Movies</span>
-                   
-                  </div>
-                </div>
-                <div class="entry clearfix">
-                  <div class="entry-img-wrapper">
-                    <img class="entry-img" src="./images/image-3.png" alt="Jim Roy">
-                  </div>
-                  <div class="entry-description">
-                    <div class="blue bold">NEW COMMENT !</div>
-                    <div class="entry-title ">The Best French Restaurant in Chicago?</div>
-                    <div class="by">
-                      by
-                      <span class="description-item blue bold">Jim Roy</span>
-                      <span class="description-item last ">February 7, 2012 </span>
-                    </div>  
-                   
-                      From Topic Box :
-                      <span class="font-blue font-bold">Chicago Restaurants Reviews</span>
-                   
-                  </div>
-                </div>
-                <div class="entry clearfix">
-                  <div class="entry-img-wrapper">
-                    <img class="entry-img" src="./images/image-4.png" alt="John-Peter Moise">
-                  </div>
-                  <div class="entry-description">
-                    <div class="entry-title ">The Meaning of Night. Dark Book but incredibly well written</div>
-                    <div class="by">
-                      by
-                      <span class="description-item blue bold">John-Peter Moise</span>
-                      <span class="description-item " > February 7, 2012 </span>
-                      <span class="description-item last green bold">Subscribed</span>
-
-                    </div>  
-                   
-                      From Topic Box :
-                      <span class="font-blue font-bold">My Favorite Movies</span>
-                   
-                  </div>
-                </div>
-                <div class="entry clearfix">
-                  <div class="entry-img-wrapper">
-                    <img class="entry-img" src="./images/image-5.png" alt="Pea Pesto">
-                  </div>
-                  <div class="entry-description">
-                    <div class="red bold">TOPIC BOX INVITE!</div>
-                    <div class="entry-title ">Pea Pesto</div>
-                    <div class="by">
-                      by
-                      <span class="description-item blue bold">Marianne Gig </span>
-                      <span class="description-item last" > February 6, 2012 </span>
-                    </div>  
-                      From Topic Box :
-                      <span class="font-blue font-bold">Favorite Recipes</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="aside right">
-          <div class="aside-header"><span>Video Tutorials</span></div>
-          <div>
-            <div class="aside-item">
-              <p>Overview of TuTangle</p>
-            </div>
-            <div class="aside-item">
-              <p>Searching the Site</p>
-            </div>
-            <div class="aside-item">
-              <p>Previous & Saved Searches</p>
-            </div>
-            <div class="aside-item">
-              <p>The Topic Box Page</p>
-            </div>
-            <div class="aside-item">
-              <p>Creating a Topic Box</p>
-            </div>
-            <div class="aside-item">
-              <p>View Topic Box Entries</p>
-            </div>
-            <div class="aside-item">
-              <p>Creating an Entry</p>
-            </div>
-            <div class="aside-item">
-              <p>Privacy Settings</p>
-            </div>
-            <div class="aside-item">
-              <p>Co-Authoring</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer">
-        <ul class=" footer-items">
-          <li class="footer-item">
-              <a class="footer-link" href="#">About Us</a>
-          </li>
-          <li class="footer-item">
-            <a class="footer-link" href="#">Contact Us</a>
-          </li>
+        <h1>Assignments</h1>
+    <table>
+        <tr>
+          <th>Date</th>
+          <th>Title</th>
+          <th>Assignment Type</th>
+          <th>Demo</th>
+          <th>Repository</th>
+        </tr>
+        <tr>
+          <td>April 26 2021</td>
+          <td>Tu Tangle</td>
+          <td>Design Practive</td>
+          <td><a href="./design.html">Visit</a></td>
+          <td><a href="https://github.com/Irajan/irajan.github.io">View Code</a></td>
+        </tr>
+      </table>  
           
-          <li class="footer-item">
-            <a class="footer-link" href="#">Terms of Use</a>
-          </li>
-          
-          <li class="footer-item">
-            <a class="footer-link" href="#">Privacy Policy</a>
-          </li>
-          <li class="footer-item">
-            <a class="footer-link last" href="#">Feedback</a>
-          </li>
-        </ul>
-        <div class="copyright">&copy; TuTangle 2013</div>
-    </div>
-  </div>
 </body>
 </html>
