@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  font-family: "sans-serif";
+}
+
+input,
+button{
+  border: none;
+  background: none;
+  outline:none;
+}
+
+ul {
+  list-style: none;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
