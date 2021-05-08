@@ -1,0 +1,15 @@
+.wrapper{
+    width: 515px;
+    height:515px;
+    position: relative;
+    background-color: aliceblue;
+    margin: 5px auto;
+}
+
+.ball{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    background-color: #932;
+}
