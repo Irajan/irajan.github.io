@@ -9,7 +9,58 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <div class="container">
+
+        <form class="form">
+            <div class="form-header clearfix">
+                <h3 class="form-header__text">
+                    Password Generator
+                </h3>
+                <div class="theme-mode-indicator">
+                    <div class="theme-btn">
+                        <span class="theme-btn__top"></span>
+                        <span class="theme-btn__bottom"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <label for="password-length" class="option-length">Length</label>
+                <input type="range" min="2" max="32" id="length-slider" value="2">
+                <input type="number" id="password-length" min="2" max="32" class="length-value">
+            </div>
+
+            <div class="form-row">
+                <label for="option-lowercase" class="form-label">Lowercase Letters</label>
+                <input type="checkbox" id="option-lowercase">
+                <span class="toggler"></span>
+            </div>
+
+            <div class="form-row">
+                <label for="option-uppercase" class="form-label">Uppercase Letters</label>
+                <input type="checkbox" id="option-uppercase">
+                <span class="toggler"></span>
+            </div>
+
+            <div class="form-row">
+                <label for="option-number" class="form-label">Numbers</label>
+                <input type="checkbox" id="option-number">
+                <span class="toggler"></span>
+            </div>
+
+            <div class="form-row">
+                <label for="option-symbols" class="form-label">Symbols</label>
+                <input type="checkbox" id="option-symbols">
+                <span class="toggler"></span>
+            </div>
+
+            <button type="submit" class="btn-primary">Generate</button>
+        </form>
+
+        <div class="output">
+            <div class="output-text">Rnksdfkashflknaslkn</div>
+            <button class="btn-primary">Copy</button>
+        </div>
+    </div>
     <script src="./index.js"></script>
 </body>
 </html>
