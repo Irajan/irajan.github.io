@@ -44,8 +44,8 @@ $('#theme-controller').addEventListener('click', function () {
 	textColor = temp;
 });
 
-passwordLengthInput.addEventListener('change', handleLengthChange);
-passwordLengthSlider.addEventListener('change', handleLengthChange);
+passwordLengthInput.addEventListener('input', handleLengthChange);
+passwordLengthSlider.addEventListener('input', handleLengthChange);
 
 /* Length change handler function*/
 function handleLengthChange() {
