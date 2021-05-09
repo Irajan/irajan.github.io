@@ -16,7 +16,7 @@
                 <h3 class="form-header__text">
                     Password Generator
                 </h3>
-                <div class="theme-mode-indicator">
+                <div class="theme-mode-indicator" id="theme-controller">
                     <div class="theme-btn">
                         <span class="theme-btn__top"></span>
                         <span class="theme-btn__bottom"></span>
@@ -31,32 +31,32 @@
 
             <div class="form-row">
                 <label for="option-lowercase" class="form-label">Lowercase Letters</label>
-                <input type="checkbox" id="option-lowercase">
+                <input type="checkbox" id="option-lowercase" class="d-n" checked>
                 <span class="toggler"></span>
             </div>
 
             <div class="form-row">
                 <label for="option-uppercase" class="form-label">Uppercase Letters</label>
-                <input type="checkbox" id="option-uppercase">
+                <input type="checkbox" id="option-uppercase" class="d-n">
                 <span class="toggler"></span>
             </div>
 
             <div class="form-row">
                 <label for="option-number" class="form-label">Numbers</label>
-                <input type="checkbox" id="option-number">
+                <input type="checkbox" id="option-number" class="d-n">
                 <span class="toggler"></span>
             </div>
 
             <div class="form-row">
                 <label for="option-symbols" class="form-label">Symbols</label>
-                <input type="checkbox" id="option-symbols">
+                <input type="checkbox" id="option-symbols" class="d-n">
                 <span class="toggler"></span>
             </div>
 
             <button type="submit" class="btn-primary">Generate</button>
         </form>
 
-        <div class="output">
+        <div class="output d-n">
             <div class="output-text">Rnksdfkashflknaslkn</div>
             <button class="btn-primary">Copy</button>
         </div>
