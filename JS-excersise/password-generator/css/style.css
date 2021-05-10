@@ -1,0 +1,131 @@
+/* Variables */
+:root{
+    --primary-color: #5599ee;
+    --background-color: #0f0700;
+    --text-color: #f5f5f5;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+.form-header__text{
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: var(--text-color);
+}
+
+.theme-mode-indicator{
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.theme-btn{
+    border-radius: 50%;
+}
+
+.theme-btn{
+    border :2px solid var(--primary-color);
+    background-color: var(--background-color);
+}
+
+.theme-btn__top{
+    display: block;
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: var(--primary-color);
+}
+
+.form-row{
+    color: var(--text-color);
+    font-size: 1.25rem;
+}
+
+.length-value{
+    border: 2px solid #cdcdcd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.length-value:focus{
+   border-color: var(--primary-color);
+   
+}
+
+.form-label{
+    width: calc(100% - 65px);
+    display: inline-block;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 20px;
+    width: calc(100% + 5px);
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    background: var(--background-color);
+    border: 2px solid var(--primary-color)
+  }
+  
+input[type=range]::-moz-range-track {
+    height: 20px;
+    width: calc(100% + 5px);
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    background-color: var(--background-color);
+    border: 2px solid var(--primary-color)
+  }
+
+.toggler{
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggler:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 25px;
+    top: 1px;
+    left: 1px;
+    background-color: var(--primary-color);
+    transition: 0.2s;
+}
+
+input[type="checkbox"]:checked + .toggler{
+    background-color: var(--primary-color);
+}
+
+input[type="checkbox"]:checked + .toggler:before{
+    transform: translate(32px,0px); 
+    background-color: var(--background-color);
+}
+
+.btn-primary{
+    border:none;
+    font-size: 1.2rem;
+    color: #fafafa;
+    padding: 1.1rem 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+
+.output-text{
+    text-align: center;
+    border: 2px solid #cdcdcd;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    color: var(--text-color);   
+}
+
