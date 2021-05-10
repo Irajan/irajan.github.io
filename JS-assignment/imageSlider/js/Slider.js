@@ -101,12 +101,12 @@ function ImageSlider(domElement, transitionTime, holdTime) {
 		this.domElement.appendChild(this.indicatorWrapper);
 	};
 
-	this.interval = (requestInterval = () => {
+	this.requestInterval = () => {
 		return setInterval(() => {
 			const nextIndex = (this.currentIndex + 1) % this.imageCount;
 			this.slide(this.currentIndex, nextIndex);
 		}, this.holdTime);
-	})();
-
-	this.interval = this.init();
+	};
+	this.interval = this.requestInterval();
+	this.init();
 }
