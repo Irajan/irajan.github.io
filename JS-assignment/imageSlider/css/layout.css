@@ -1,0 +1,9 @@
+.container{
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.carousel-container{
+    margin: 5px;
+    float: left;
+}
