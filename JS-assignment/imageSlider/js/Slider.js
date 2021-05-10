@@ -26,7 +26,6 @@ function ImageSlider(domElement, transitionTime, holdTime) {
 		const targetPosition = this.currentPosition - slidingWidth;
 		let left = this.currentPosition;
 
-		clearInterval(this.interval);
 		const interval = setInterval(() => {
 			this.transition = true;
 
@@ -39,10 +38,14 @@ function ImageSlider(domElement, transitionTime, holdTime) {
 				this.currentPosition = targetPosition;
 				this.transition = false;
 				clearInterval(interval);
+
 				this.updateIndicator();
-				setTimeout(() => {
-					this.interval = this.requestInterval();
-				}, this.holdTime * 2);
+
+				if (!this.interval) {
+					setTimeout(() => {
+						this.interval = this.requestInterval();
+					}, this.holdTime * 2);
+				}
 			}
 		}, 1);
 	};
@@ -73,6 +76,8 @@ function ImageSlider(domElement, transitionTime, holdTime) {
 
 			indicator.addEventListener('click', () => {
 				if (!this.transition) {
+					clearInterval(this.interval);
+					this.interval = null;
 					this.slide(this.currentIndex, i);
 				}
 			});
@@ -87,13 +92,19 @@ function ImageSlider(domElement, transitionTime, holdTime) {
 		prevBtn.innerHTML = '<';
 
 		nextBtn.addEventListener('click', () => {
-			if (!this.transition && this.currentIndex != this.imageCount - 1)
+			if (!this.transition && this.currentIndex != this.imageCount - 1) {
+				clearInterval(this.interval);
+				this.interval = null;
 				this.slide(this.currentIndex, this.currentIndex + 1, -1);
+			}
 		});
 
 		prevBtn.addEventListener('click', () => {
-			if (!this.transition && this.currentIndex != 0)
+			if (!this.transition && this.currentIndex != 0) {
+				clearInterval(this.interval);
+				this.interval = null;
 				this.slide(this.currentIndex, this.currentIndex - 1, 1);
+			}
 		});
 
 		this.domElement.appendChild(nextBtn);
