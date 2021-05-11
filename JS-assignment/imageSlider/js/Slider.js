@@ -43,12 +43,12 @@ function ImageSlider(domElement, transitionTime, holdTime) {
 
 				this.updateIndicator();
 
-				//if (!this.interval) {
-					//const timeoutId = setTimeout(() => {
-						//this.interval = this.requestInterval();
-                        //clearTimeout(timeoutId);
-					//}, this.holdTime * 2);
-				//}
+				if (!this.interval) {
+					const timeoutId = setTimeout(() => {
+						this.interval = this.requestInterval();
+                        			clearTimeout(timeoutId);
+					}, this.holdTime * 2);
+				}
 			}
        
 		}, 1);
@@ -117,12 +117,12 @@ function ImageSlider(domElement, transitionTime, holdTime) {
 		this.domElement.appendChild(this.indicatorWrapper);
 	};
 
-	//this.requestInterval = () => {
-		//return setInterval(() => {
-			//const nextIndex = (this.currentIndex + 1) % this.imageCount;
-			//this.slide(this.currentIndex, nextIndex);
-		//}, this.holdTime);
-	//};
-	//this.interval = this.requestInterval();
+	this.requestInterval = () => {
+		return setInterval(() => {
+			const nextIndex = (this.currentIndex + 1) % this.imageCount;
+			this.slide(this.currentIndex, nextIndex);
+		}, this.holdTime);
+	};
+	this.interval = this.requestInterval();
 	this.init();
 }
