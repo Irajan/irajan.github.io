@@ -19,12 +19,14 @@ function ImageSlider(domElement, transitionTime, holdTime) {
 	 * @param { destinationIndex} index value of image after slide
 	 */
 	this.slide = function (currentIndex, destinationIndex) {
+
 		const diff = destinationIndex - currentIndex;
 		const slidingWidth = diff * (IMAGE_WIDTH + 20);
 		const pxPerMS = slidingWidth / this.transitionTime;
 
 		const targetPosition = this.currentPosition - slidingWidth;
 		let left = this.currentPosition;
+
 
 		const interval = setInterval(() => {
 			this.transition = true;
@@ -42,12 +44,15 @@ function ImageSlider(domElement, transitionTime, holdTime) {
 				this.updateIndicator();
 
 				if (!this.interval) {
-					setTimeout(() => {
+					const timeoutId = setTimeout(() => {
 						this.interval = this.requestInterval();
+                        clearTimeout(timeoutId);
 					}, this.holdTime * 2);
 				}
 			}
+       
 		}, 1);
+         
 	};
 
 	/**
