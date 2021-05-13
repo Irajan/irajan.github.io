@@ -1,7 +1,5 @@
 const manyCanvas = $('canvas');
 
-console.log(manyCanvas);
-
 manyCanvas.forEach((canvas) => {
 	canvas.width = SCREEN_WIDTH;
 	canvas.height = SCREEN_HEIGHT;
