@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flappy Bird</title>
+
+    <!--CSS files-->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--Useful JS files -->
+    <script src="./js/constants.js"></script>
+    <script src="./js/utils.js"></script>
+  </head>
+  <body>
+    <div class="assets">
+      <img id="background" src="./assets/background.png" />
+      <img id="bird" src="./assets/bird-sprites.png" />
+      <img id="bottomWall" src="./assets/bottom-wall.png" />
+      <img id="over" src="./assets/over.png" />
+      <img id="downPipe" src="./assets/pipe-downwards.png" />
+      <img id="upPipe" src="./assets/pipe-upward.png" />
+      <img id="playBtn" src="./assets/play-btn.png" />
+      <img id="ready" src="./assets/ready.png" />
+      <img id="topWall" src="./assets/top-wall.png" />
+      <img id="gameName" src="./assets/name.png" />
+    </div>
+
+    <canvas></canvas>
+    <script src="./js/Obstacle.js"></script>
+    <script src="./js/Bird.js"></script>
+    <script src="./js/GameController.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
