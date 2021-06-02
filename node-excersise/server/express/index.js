@@ -34,6 +34,6 @@ app.use((req, res) => {
   });
 });
 
-express.listen(3000, function () {
+app.listen(3000, function () {
   console.log('Server is up and running');
 });
