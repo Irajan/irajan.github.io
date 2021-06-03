@@ -1,0 +1,14 @@
+[
+  {
+    "name": "John",
+    "password": "$2a$10$eMVNaX2fiWCW6uGtZrFTLuD1DwD3H84oVGdAnMd9KC1usiisDtnhq"
+  },
+  {
+    "name": "Smith",
+    "password": "$2a$10$m.3/RAmixaJJbQyyNxMUMu6gkO6J9irkVAzFxcJ0/R41yMMMrHpbm"
+  },
+  {
+    "name": "Jeffrey",
+    "password": "$2a$10$GjmfyaLyUACbmbN1oTQtA.tWg.dujmmut8XUl4K5AjPDl1hTPD7ke"
+  }
+]
