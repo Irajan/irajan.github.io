@@ -1,116 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1{
-            text-align: center;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Irajan Dhakal</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header" id="header">
+        <div class="header__left">
+          <div class="intro" id="intro">
+            <h1 class="loading" id="intro-loading">Loading</h1>
+          </div>
+        </div>
+        <div class="header__right">
+          <div class="avatar avatar--big">
+            <img class="avater__img" src="./images/profile.jpeg" />
+          </div>
+        </div>
+      </div>
 
-        table {
-          font-family: Arial, Helvetica, sans-serif;
-          border-collapse: collapse;
-          width: 90%;
-          margin: 0 auto;
-        }
-        
-        table td, table th {
-          border: 1px solid #ddd;
-          padding: 8px;
-        }
-        
-        table tr:nth-child(even){background-color: #f2f2f2;}
-        
-        table tr:hover {background-color: #ddd;}
-        
-        table th {
-          padding-top: 12px;
-          padding-bottom: 12px;
-          text-align: left;
-          background-color: #4CAF50;
-          color: white;
-        }
-    </style>
-</head>
-<body>
-        <h1>Assignments</h1>
-    <table>
-        <tr>
-          <th>Date</th>
-          <th>Title</th>
-          <th>Assignment Type</th>
-          <th>Demo</th>
-          <th>Repository</th>
-        </tr>
-        <tr>
-          <td>April 26 2021</td>
-          <td>Tu Tangle</td>
-          <td>Design Practice</td>
-          <td><a href="./design.html">Visit</a></td>
-          <td><a href="https://github.com/Irajan/irajan.github.io">View Code</a></td>
-        </tr>
-        <tr>
-          <td>April 28 2021</td>
-          <td>Tu Tangle Responsive</td>
-          <td>Design Practice</td>
-          <td><a href="https://irajan.github.io/res-TuTangle/">Visit</a></td>
-          <td><a href="https://github.com/Irajan/res-TuTangle">View Code</a></td>
-        </tr>
-        <tr>
-          <td>April 30 2021</td>
-          <td>Fire Fly Webpage</td>
-          <td>Final Design</td>
-          <td><a href="https://irajan.github.io/final-design">Visit</a></td>
-          <td><a href="https://github.com/Irajan/final-design">View Code</a></td>
-        </tr>
-        
-        <tr>
-          <td>May 11 2021</td>
-          <td>JS Image Slider</td>
-          <td>Carousel Image Slider</td>
-          <td><a href="https://irajan.github.io/JS-assignment/imageSlider/">Visit</a></td>
-          <td><a href="https://github.com/Irajan/irajan.github.io/tree/master/JS-assignment/imageSlider">View Code</a></td>
-        </tr>
-        
-        <tr>
-          <td>May 12 2021</td>
-          <td>JS Canvas Animation</td>
-          <td>Ball Collision</td>
-          <td><a href="https://irajan.github.io/JS-assignment/ballCollision/">Visit</a></td>
-          <td><a href="https://github.com/Irajan/irajan.github.io/tree/master/JS-assignment/ballCollision">View Code</a></td>
-        </tr>
-        <tr>
-          <td>May 12 2021</td>
-          <td>JS Canvas Animation</td>
-          <td>Ant Smasher</td>
-          <td><a href="https://irajan.github.io/JS-assignment/antSmasher/">Visit</a></td>
-          <td><a href="https://github.com/Irajan/irajan.github.io/tree/master/JS-assignment/antSmasher">View Code</a></td>
-        </tr>
-         <tr>
-          <td>May 13 2021</td>
-          <td>JS Canvas Animation</td>
-          <td>Car Lane Game</td>
-          <td><a href="https://irajan.github.io/JS-assignment/carLaneGame/">Play</a></td>
-          <td><a href="https://github.com/Irajan/irajan.github.io/tree/master/JS-assignment/carLaneGame">View Code</a></td>
-        </tr>
-         <tr>
-          <td>May 14 2021</td>
-          <td>JS Canvas Animation</td>
-          <td>Flappy Bird</td>
-          <td><a href="https://irajan.github.io/JS-assignment/flappyBird/">Play</a></td>
-          <td><a href="https://github.com/Irajan/irajan.github.io/tree/master/JS-assignment/flappyBird">View Code</a></td>
-        </tr>
-        
-        <tr>
-          <td>May 28 2021</td>
-          <td>JS Project</td>
-          <td>Dangerous Dave Maker</td>
-          <td><a href="https://irajan.github.io/dave-maker/">Play</a></td>
-          <td><a href="https://github.com/Irajan/dave-maker">View Code</a></td>
-        </tr>
-      </table> 
-</body>
+      <div class="main-container">
+        <div class="toggler">
+          <input type="checkbox" class="toggler__input" />
+          <span class="toggler__button"></span>
+        </div>
+
+        <div class="info">
+          <h1 title="about irajan dhakal" class="info__header">About Me</h1>
+          <div class="picture picture--large">
+            <img class="picture__img" src="./images/profile.jpeg" />
+            <div class="picture__caption">
+              <div class="icon-wrapper">
+                <span class="icon-wrapper__icon">Age</span>
+                <span class="icon-wrapper__text">23</span>
+              </div>
+            </div>
+          </div>
+          <p class="info__text">
+            I am a Web Developer with enthusiasm and focus on Frontend
+            Development and Scripting I focus on writing accessible HTML, using
+            modern CSS practices and writing clean JavaScript. When writing
+            JavaScript code, I mostly use React, but I can adapt to whatever
+            tools are required. I love learning new and better ways to create
+            seamless user experiences with clean, efficient, and scalable code.
+          </p>
+
+          <h3 class="info__sub-header">Educational Info</h3>
+          <div class="timeline">
+            <div class="timeline__row">
+              <div class="timeline__date"></div>
+              <div class="timeline__text"></div>
+            </div>
+          </div>
+
+          <h1 class="info__header">Skills</h1>
+          <h3 class="info__sub-header">Languages and Scripts</h3>
+          <div class="picture picture--small">
+            <img class="picture__img" src="" alt="C++" />
+          </div>
+
+          <h3 class="info__sub-header">Frameworks and Libraries</h3>
+          <div class="picture picture--small">
+            <img class="picture__img" src="" alt="C++" />
+          </div>
+
+          <h1 class="info__header">Projects/Works</h1>
+
+          <div class="jick-saw">
+            <div class="jick-saw__row">
+              <div class="jick-saw__content">
+                <h3 class="info__sub-header">Binary Tree</h3>
+                <p class="jick-saw__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                  dolor nihil soluta. Voluptatum modi repellendus cum officiis
+                  fugit tenetur quo vitae voluptatem itaque quidem, alias quae
+                  provident vel veniam sit.
+                </p>
+              </div>
+              <div class="jick-saw__img">
+                <div class="picture">
+                  <img class="picture__img" src="./icons/" alt="project" />
+                </div>
+              </div>
+            </div>
+            <div class="jick-saw__row">
+              <div class="jick-saw__content">
+                <h3 class="info__sub-header">Binary Tree</h3>
+                <p class="jick-saw__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                  dolor nihil soluta. Voluptatum modi repellendus cum officiis
+                  fugit tenetur quo vitae voluptatem itaque quidem, alias quae
+                  provident vel veniam sit.
+                </p>
+              </div>
+              <div class="jick-saw__img">
+                <div class="picture">
+                  <img class="picture__img" src="./icons/" alt="project" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js" type="module"></script>
+  </body>
 </html>

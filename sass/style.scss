@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 1rem;
+}
+
+@import "avatar.scss";
+@import "header.scss";
+@import "icon.scss";
+@import "info.scss";
+@import "intro.scss";
+@import "jick-saw.scss";
+@import "loading.scss";
+@import "picture.scss";
+@import "timeline.scss";
+@import "toggler.scss";

@@ -1,0 +1,23 @@
+.header {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #97e6f1;
+  min-height: 170px;
+  display: flex;
+  justify-content: space-between;
+
+  .header__right {
+    margin-left: auto;
+  }
+}
+
+.header--loaded {
+  background-image: linear-gradient(
+    90deg,
+    #060606 24.06%,
+    rgba(0, 0, 0, 0.770938) 24.06%,
+    rgba(0, 0, 0, 0.942708) 24.07%,
+    #000000 24.08%,
+    #ffffff 85.54%
+  );
+}
