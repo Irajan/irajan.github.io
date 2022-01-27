@@ -8,7 +8,7 @@ export const multiply = (str, times) => {
  *
  */
 export const typeWrite = (domElement, string, interval = 500) => {
-  let displayData = "";
+  let displayData = domElement.innerHTML;
   const stringArray = Array.from(string);
 
   return new Promise(function (resolve, reject) {

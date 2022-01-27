@@ -1,6 +1,6 @@
 .loading:after {
   content: "";
-  animation: add-ellipse 3s linear 1s 3;
+  animation: add-ellipse 2s linear 0.5s 3;
 }
 
 @keyframes add-ellipse {

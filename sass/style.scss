@@ -1,13 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "./utils/index.scss";
+@import "./colors";
 
-.container {
-  margin: 1rem;
-}
-
+@import "base.scss";
 @import "avatar.scss";
 @import "header.scss";
 @import "icon.scss";

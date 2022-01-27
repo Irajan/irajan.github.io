@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="header" id="header">
+      <div class="header mb-2" id="header">
         <div class="header__left">
           <div class="intro" id="intro">
             <h1 class="loading" id="intro-loading">Loading</h1>
@@ -17,22 +17,26 @@
         </div>
         <div class="header__right">
           <div class="avatar avatar--big">
-            <img class="avater__img" src="./images/profile.jpeg" />
+            <img class="avatar__img" src="./images/profile.jpeg" />
           </div>
         </div>
       </div>
 
       <div class="main-container">
         <div class="toggler">
-          <input type="checkbox" class="toggler__input" />
-          <span class="toggler__button"></span>
+          <input type="checkbox" class="toggler__input" id="toggle" />
+          <label class="toggler__label" for="toggle"></label>
         </div>
 
         <div class="info">
-          <h1 title="about irajan dhakal" class="info__header">About Me</h1>
-          <div class="picture picture--large">
+          <h1 class="info__header mb-1">About Me</h1>
+          <div class="picture picture--large f-right">
             <img class="picture__img" src="./images/profile.jpeg" />
             <div class="picture__caption">
+              <div class="icon-wrapper">
+                <span class="icon-wrapper__icon">H</span>
+                <span class="icon-wrapper__text">Gorkha, Nepal</span>
+              </div>
               <div class="icon-wrapper">
                 <span class="icon-wrapper__icon">Age</span>
                 <span class="icon-wrapper__text">23</span>

@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: getColor("blue.20");
+}
+
+.main-container {
+  padding: 20px;
+  background-color: getColor("white.base");
+}

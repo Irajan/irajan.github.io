@@ -1,0 +1,7 @@
+.info {
+  font-family: "Courier New", Courier, monospace;
+
+  @include e(text) {
+    font-size: 1.2rem;
+  }
+}
