@@ -11,4 +11,15 @@
       margin-right: 5px;
     }
   }
+
+  @include e(description){
+    font-size: 1.2rem;
+  }
+
+  @include e(slogan){
+    font-size: 1rem;
+    font-style: oblique;
+    margin-top: 10px;
+  }
+
 }

@@ -10,6 +10,7 @@ import { typeWrite } from "./utils/string.mjs";
 const loadingDOM = document.getElementById("intro-loading");
 const introDOM = document.getElementById("intro");
 const headerDOM = document.getElementById("header");
+const containerDOM = document.querySelector(".main-container");
 
 loadingDOM.onanimationend = async () => {
   introDOM.removeChild(loadingDOM);
@@ -33,9 +34,12 @@ loadingDOM.onanimationend = async () => {
   introDescriptionDOM.setAttribute("class", "intro__description");
   introDOM.appendChild(introDescriptionDOM);
 
-  introDescriptionDOM.innerHTML = `${introDescription}<br/><br/>`;
+  introDescriptionDOM.innerHTML = introDescription;
 
-  await typeWrite(introDescriptionDOM, "   ", 1000);
+  const introSloganDOM = document.createElement("div");
+  introSloganDOM.setAttribute("class", "intro__slogan");
+  introDOM.appendChild(introSloganDOM);
 
-  await typeWrite(introDescriptionDOM, slogan, 50);
+  await typeWrite(introDescriptionDOM, " ", 1000);
+  await typeWrite(introSloganDOM, slogan, 100);
 };
