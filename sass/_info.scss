@@ -1,0 +1,14 @@
+.info {
+  margin: 1.5rem;
+  padding: 20px;
+  background-color: getColor("white.base");
+
+  @include e(text) {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  @include e(sub-header) {
+    margin: 1rem 0px;
+  }
+}

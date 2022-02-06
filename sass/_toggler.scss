@@ -1,0 +1,46 @@
+$togglerWidth: 80px;
+$togglerOffSet: 3px;
+
+.toggler {
+  @include e(input) {
+    display: none;
+    &:checked + .toggler__label {
+      background-color: getColor("blue.60");
+    }
+
+    &:checked + .toggler__label::before {
+      background-color: getColor("grey.40");
+      transform: translate($togglerWidth / 2, 0px);
+    }
+  }
+
+  @include e(label) {
+    width: $togglerWidth;
+    height: $togglerWidth / 2;
+    border-radius: $togglerWidth / 2;
+    display: block;
+
+    position: relative;
+
+    margin-left: auto;
+
+    cursor: pointer;
+    background-color: getColor("grey.40");
+
+    &::before {
+      content: "";
+      display: block;
+      height: $togglerWidth/2 - $togglerOffSet * 2;
+      width: $togglerWidth/2 - $togglerOffSet * 2;
+      border-radius: 50%;
+
+      position: absolute;
+      top: $togglerOffSet;
+      left: $togglerOffSet;
+
+      transition: 0.3s transform ease-in-out;
+
+      background-color: getColor("blue.60");
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.loading:after {
+  content: "";
+  animation: add-ellipse 2s linear 0.5s 2;
+}
+
+@keyframes add-ellipse {
+  0% {
+    content: " .";
+  }
+  20% {
+    content: " . .";
+  }
+  40% {
+    content: " . . .";
+  }
+
+  100% {
+    content: " .";
+  }
+}

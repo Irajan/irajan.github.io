@@ -1,0 +1,61 @@
+.jick-saw {
+  @include e(card) {
+    display: flex;
+    flex-wrap: wrap;
+
+    &:nth-of-type(even) {
+      border-top-left-radius: 20px;
+
+      .jick-saw__content {
+        order: 2;
+      }
+    }
+  }
+
+  @include e(content) {
+    flex: 1 1 400px;
+    text-align: justify;
+    margin-right: 1rem;
+  }
+
+  @include e(img) {
+    flex: 0 0 200px;
+    margin: 0 1rem;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      background: linear-gradient(
+        getColor("white.transparent"),
+        getColor("blue.transparent")
+      );
+
+      img {
+        filter: blur(1px);
+      }
+
+      .jick-saw__hidden-btn {
+        bottom: 25%;
+        opacity: 1;
+      }
+    }
+  }
+
+  @include e(hidden-btn) {
+    background-color: getColor("grey.10");
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.2s ease-in;
+    border: 2px solid getColor("blue.60");
+    border-radius: 5px;
+
+    &:hover {
+      background-color: getColor("blue.60");
+    }
+  }
+}

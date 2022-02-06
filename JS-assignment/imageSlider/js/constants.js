@@ -1,4 +1,0 @@
-const IMAGE_WIDTH = 536;
-const IMAGE_HEIGHT = 354;
-const TRANSITION_TIME = 67;
-const HOLD_TIME = 3000;

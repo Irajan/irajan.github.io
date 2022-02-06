@@ -1,116 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1{
-            text-align: center;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Irajan Dhakal</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header mb-2" id="header">
+        <div class="header__left">
+          <div class="intro" id="intro">
+            <h1 class="loading" id="intro-loading">Loading</h1>
+          </div>
+        </div>
+        <div class="header__right">
+          <div class="avatar avatar--big">
+            <img class="avatar__img" src="./images/profile.jpeg" />
+          </div>
+        </div>
+      </div>
 
-        table {
-          font-family: Arial, Helvetica, sans-serif;
-          border-collapse: collapse;
-          width: 90%;
-          margin: 0 auto;
-        }
-        
-        table td, table th {
-          border: 1px solid #ddd;
-          padding: 8px;
-        }
-        
-        table tr:nth-child(even){background-color: #f2f2f2;}
-        
-        table tr:hover {background-color: #ddd;}
-        
-        table th {
-          padding-top: 12px;
-          padding-bottom: 12px;
-          text-align: left;
-          background-color: #4CAF50;
-          color: white;
-        }
-    </style>
-</head>
-<body>
-        <h1>Assignments</h1>
-    <table>
-        <tr>
-          <th>Date</th>
-          <th>Title</th>
-          <th>Assignment Type</th>
-          <th>Demo</th>
-          <th>Repository</th>
-        </tr>
-        <tr>
-          <td>April 26 2021</td>
-          <td>Tu Tangle</td>
-          <td>Design Practice</td>
-          <td><a href="./design.html">Visit</a></td>
-          <td><a href="https://github.com/Irajan/irajan.github.io">View Code</a></td>
-        </tr>
-        <tr>
-          <td>April 28 2021</td>
-          <td>Tu Tangle Responsive</td>
-          <td>Design Practice</td>
-          <td><a href="https://irajan.github.io/res-TuTangle/">Visit</a></td>
-          <td><a href="https://github.com/Irajan/res-TuTangle">View Code</a></td>
-        </tr>
-        <tr>
-          <td>April 30 2021</td>
-          <td>Fire Fly Webpage</td>
-          <td>Final Design</td>
-          <td><a href="https://irajan.github.io/final-design">Visit</a></td>
-          <td><a href="https://github.com/Irajan/final-design">View Code</a></td>
-        </tr>
-        
-        <tr>
-          <td>May 11 2021</td>
-          <td>JS Image Slider</td>
-          <td>Carousel Image Slider</td>
-          <td><a href="https://irajan.github.io/JS-assignment/imageSlider/">Visit</a></td>
-          <td><a href="https://github.com/Irajan/irajan.github.io/tree/master/JS-assignment/imageSlider">View Code</a></td>
-        </tr>
-        
-        <tr>
-          <td>May 12 2021</td>
-          <td>JS Canvas Animation</td>
-          <td>Ball Collision</td>
-          <td><a href="https://irajan.github.io/JS-assignment/ballCollision/">Visit</a></td>
-          <td><a href="https://github.com/Irajan/irajan.github.io/tree/master/JS-assignment/ballCollision">View Code</a></td>
-        </tr>
-        <tr>
-          <td>May 12 2021</td>
-          <td>JS Canvas Animation</td>
-          <td>Ant Smasher</td>
-          <td><a href="https://irajan.github.io/JS-assignment/antSmasher/">Visit</a></td>
-          <td><a href="https://github.com/Irajan/irajan.github.io/tree/master/JS-assignment/antSmasher">View Code</a></td>
-        </tr>
-         <tr>
-          <td>May 13 2021</td>
-          <td>JS Canvas Animation</td>
-          <td>Car Lane Game</td>
-          <td><a href="https://irajan.github.io/JS-assignment/carLaneGame/">Play</a></td>
-          <td><a href="https://github.com/Irajan/irajan.github.io/tree/master/JS-assignment/carLaneGame">View Code</a></td>
-        </tr>
-         <tr>
-          <td>May 14 2021</td>
-          <td>JS Canvas Animation</td>
-          <td>Flappy Bird</td>
-          <td><a href="https://irajan.github.io/JS-assignment/flappyBird/">Play</a></td>
-          <td><a href="https://github.com/Irajan/irajan.github.io/tree/master/JS-assignment/flappyBird">View Code</a></td>
-        </tr>
-        
-        <tr>
-          <td>May 28 2021</td>
-          <td>JS Project</td>
-          <td>Dangerous Dave Maker</td>
-          <td><a href="https://irajan.github.io/dave-maker/">Play</a></td>
-          <td><a href="https://github.com/Irajan/dave-maker">View Code</a></td>
-        </tr>
-      </table> 
-</body>
+      <div class="info">
+        <div class="toggler f-right">
+          <input type="checkbox" class="toggler__input" id="toggle" />
+          <label class="toggler__label" for="toggle"></label>
+        </div>
+        <h1 class="info__header mb-1">About Me</h1>
+        <div class="picture picture--large f-right ml-1">
+          <img class="picture__img" src="./images/profile.jpeg" />
+          <div class="picture__caption">
+            <div class="icon-text" title="Home address">
+              <span class="icon-text__icon">
+                <img src="./icons/home.svg" />
+              </span>
+              <span class="icon-text__text">Gorkha, Nepal</span>
+            </div>
+            <div class="icon-text">
+              <span class="icon-text__icon">Age</span>
+              <span class="icon-text__text">
+                <script>
+                  document.write(new Date().getYear() - 98);
+                </script>
+              </span>
+            </div>
+          </div>
+        </div>
+        <p class="info__text">
+          I am a Full Stack Developer with significant experience with modern
+          backend stacks and front-end frameworks. My proficiency lies not just
+          on implementing high-level frameworks and libraries but also in core
+          programming and problem solving to turn ideas into reality.
+        </p>
+        <br />
+        <p class="info__text">
+          I get highly motivated on writing code that best suites SOLID, YAGNI,
+          DRY, immutability, scalability and other principals. I love working
+          collaboratively with team.
+        </p>
+        <br />
+        <p class="info__text">
+          I enjoy implementing complex algorithms and generating data with
+          multiple joins and filters and play with them throughout Single Page
+          Application (SPA).
+        </p>
+
+        <h3 class="info__sub-header">Educational Info</h3>
+        <div class="timeline mb-2 mt-1">
+          <div class="timeline__row">
+            <div class="timeline__date">2070/2014</div>
+            <div class="timeline__text">
+              SLC <br />
+              Graded Educational Merit School (GEMS) <br />
+              Banasthali, Kathmandu
+            </div>
+          </div>
+          <div class="timeline__row">
+            <div class="timeline__date">2072/2016</div>
+            <div class="timeline__text">
+              +2 <br />
+              Viswa Niketan Science Campus <br />
+              Tripureshwor, Kathmandu
+            </div>
+          </div>
+          <div class="timeline__row">
+            <div class="timeline__date">2077/2020</div>
+            <div class="timeline__text">
+              Bachlor's Degree <br />
+              Himalaya College of Engineering (Tribhuvan University) <br />
+              Chysal, Lalitpur
+            </div>
+          </div>
+        </div>
+
+        <h1 class="info__header">Skills</h1>
+        <h3 class="info__sub-header">Languages and Scripts</h3>
+        <ul class="d-flex gap-2">
+          <li>
+            <div class="picture picture--small">
+              <img
+                class="picture__img"
+                src="./images/html.png"
+                alt="HTML"
+                title="HTML"
+              />
+            </div>
+          </li>
+          <li>
+            <div class="picture picture--small">
+              <img
+                class="picture__img"
+                src="./images/css.png"
+                alt="CSS"
+                title="CSS"
+              />
+            </div>
+          </li>
+          <li>
+            <div class="picture picture--small">
+              <img
+                class="picture__img"
+                src="./images/js.png"
+                alt="JavaScript"
+                title="JavaScript"
+              />
+            </div>
+          </li>
+          <li>
+            <div class="picture picture--small">
+              <img
+                class="picture__img"
+                src="./images/php.png"
+                alt="php"
+                title="php"
+              />
+            </div>
+          </li>
+          <li>
+            <div class="picture picture--small">
+              <img
+                class="picture__img"
+                src="./images/python.jpeg"
+                alt="python"
+                title="python"
+              />
+            </div>
+          </li>
+          <li>
+            <div class="picture picture--small">
+              <img
+                class="picture__img"
+                src="./images/java.png"
+                alt="java"
+                title="java"
+              />
+            </div>
+          </li>
+        </ul>
+
+        <h3 class="info__sub-header">Frameworks and Libraries</h3>
+        <ul class="d-flex gap-2">
+          <li>
+            <div class="picture picture--small">
+              <img
+                class="picture__img"
+                src="./images/node.jpg"
+                alt="node js"
+                title="node js"
+              />
+            </div>
+          </li>
+          <li>
+            <div class="picture picture--small">
+              <img
+                class="picture__img"
+                src="./images/react.png"
+                alt="reactJS"
+                title="reactJS"
+              />
+            </div>
+          </li>
+          <li>
+            <div class="picture picture--small">
+              <img
+                class="picture__img"
+                src="./images/flutter.png"
+                alt="flutter"
+                title="flutter"
+              />
+            </div>
+          </li>
+        </ul>
+
+        <h3 class="info__sub-header">Tools and Database</h3>
+        <ul class="d-flex gap-2">
+          <li>
+            <div class="picture picture--small">
+              <img
+                class="picture__img"
+                src="./images/mongo.png"
+                alt="mongo db"
+                title="mongo db"
+              />
+            </div>
+          </li>
+          <li>
+            <div class="picture picture--small">
+              <img
+                class="picture__img"
+                src="./images/mysql.png"
+                alt="my sql"
+                title="my sql"
+              />
+            </div>
+          </li>
+
+          <li>
+            <div class="picture picture--small">
+              <img
+                class="picture__img"
+                src="./images/postgres.png"
+                alt="postgres"
+                title="postgres"
+              />
+            </div>
+          </li>
+          <li>
+            <div class="picture picture--small">
+              <img
+                class="picture__img"
+                src="./images/git.png"
+                alt="git"
+                title="VCS (git)"
+              />
+            </div>
+          </li>
+        </ul>
+
+        <h1 class="info__header mt-2">Projects/Works</h1>
+
+        <ul class="jick-saw">
+          <li class="jick-saw__card">
+            <div class="jick-saw__content">
+              <h3 class="info__sub-header">Binary Tree</h3>
+              <p class="jick-saw__description">
+                In computer science, a binary tree is a tree data structure in
+                which each node has at most two children, which are referred to
+                as the left child and the right child.
+              </p>
+              <br />
+
+              <p class="jick-saw__description">
+                AVL tree is a self-balancing Binary Search Tree (BST) where the
+                difference between heights of left and right subtrees cannot be
+                more than one for all nodes.
+              </p>
+              <br />
+              <p class="jick-saw__description">
+                This web app visualizes how AVL balancing is performed on Binary
+                Tree
+              </p>
+            </div>
+            <div class="jick-saw__img">
+              <div class="picture">
+                <img
+                  class="picture__img"
+                  src="./images/1200px-Binary_search_tree.svg.png"
+                  alt="project"
+                />
+              </div>
+              <button class="jick-saw__hidden-btn">
+                <a href="https://irajan.github.io/BinaryTree/" target="__blank"
+                  >View</a
+                >
+              </button>
+            </div>
+          </li>
+          <li class="jick-saw__card">
+            <div class="jick-saw__content">
+              <h3 class="info__sub-header">Dangerous Dave</h3>
+              <p class="jick-saw__description">
+                Dangerous Dave is a 1988 computer game by John Romero. It was
+                developed for the Apple II and MS-DOS
+              </p>
+              <br />
+              <p class="jick-saw__description">
+                The objective of the game is to collect gold cups to move on to
+                the next level. Dave needs to find key and pass through door to
+                unlock next level.
+              </p>
+              <br />
+              <p class="jick-saw__description">
+                Blockers like fires, currents, monsters are around the way which
+                should be tackled
+              </p>
+            </div>
+            <div class="jick-saw__img">
+              <div class="picture">
+                <img
+                  class="picture__img"
+                  src="./images/dave.jpg"
+                  alt="project"
+                />
+                <button class="jick-saw__hidden-btn">
+                  <a
+                    href="https://irajan.github.io/dave-maker/"
+                    target="__blank"
+                    >View</a
+                  >
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        <h1 class="info__header">Get In Touch With Me</h1>
+        <div class="d-flex gap-3 mt-1">
+          <div class="footer-items">
+            <a
+              class="icon-text"
+              href="https://goo.gl/maps/UxTciH8EwjX6TVaR8"
+              target="_blank"
+              title="Current Location"
+            >
+              <span class="icon-text__icon">
+                <img src="./icons/location.svg" />
+              </span>
+              <span class="icon-text__text">Chandragiri,Ktm</span>
+            </a>
+
+            <a
+              class="icon-text"
+              href="mailto:irajan.dhakal@gmail.com"
+              title="Mail Address"
+            >
+              <span class="icon-text__icon">
+                <img src="./icons/mail.svg" />
+              </span>
+              <span class="icon-text__text">irajan.dhakal@gmail.com</span>
+            </a>
+          </div>
+          <div class="footer-items d-flex align-items-start gap-1">
+            <a
+              href="https://github.com/irajan"
+              target="_blank"
+              class="icon-text"
+              title="github link"
+            >
+              <img src="./icons/git.svg" class="icon-text__icon" />
+            </a>
+            <a
+              href="https://np.linkedin.com/in/irajan-dhakal-4ab9081a8"
+              class="icon-text"
+              title="linked in"
+              target="_blank"
+            >
+              <img src="./icons/linked-in.svg" class="icon-text__icon" />
+            </a>
+
+            <a
+              href="https://www.instagram.com/era.zan_dhakal/"
+              target="_blank"
+              class="icon-text"
+              title="instagram link"
+            >
+              <img src="./icons/instagram.svg" class="icon-text__icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js" type="module"></script>
+  </body>
 </html>
