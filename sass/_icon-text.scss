@@ -1,0 +1,24 @@
+.icon-text {
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &:hover {
+    background-color: getColor("blue.20");
+  }
+
+  @include e(text) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @include e(icon) {
+    &:hover {
+      transform: scale(1.5);
+      transition: all 0.2s ease-in;
+    }
+  }
+}

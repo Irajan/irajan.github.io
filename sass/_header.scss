@@ -1,6 +1,5 @@
 .header {
-  background-color: getColor("white.base");
-  border-radius: 5px;
+  background-color: getColor("grey.10");
   min-height: 150px;
   display: flex;
   align-items: center;
@@ -8,13 +7,14 @@
   font-size: 1.5rem;
 
   @include e(right) {
+    transition: all 0.2s ease-in;
     margin-left: auto;
   }
 
   @include m(loaded) {
     background-image: linear-gradient(
       90deg,
-      getColor("black.base") 70%,
+      getColor("black.base"),
       getColor("white.base")
     );
   }

@@ -4,14 +4,31 @@
   box-sizing: border-box;
 }
 
-.container {
-  padding: 1rem;
-  max-width: 1024px;
-  margin: 0 auto;
-  background-color: getColor("blue.20");
+// html {
+//   scroll-behavior: smooth;
+// }
+
+body {
+  font-family: "Courier New", Courier, monospace;
 }
 
-.main-container {
-  padding: 20px;
-  background-color: getColor("white.base");
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: getColor("black.base");
+}
+
+button {
+  border: none;
+  padding: 0.4rem 0.85rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: getColor("blue.20");
+  padding-bottom: 1rem;
 }

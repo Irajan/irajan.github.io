@@ -1,5 +1,5 @@
-$togglerWidth: 100px;
-$togglerOffSet: 5px;
+$togglerWidth: 80px;
+$togglerOffSet: 3px;
 
 .toggler {
   @include e(input) {
@@ -38,7 +38,7 @@ $togglerOffSet: 5px;
       top: $togglerOffSet;
       left: $togglerOffSet;
 
-      transition: 0.5s transform ease-out;
+      transition: 0.3s transform ease-in-out;
 
       background-color: getColor("blue.60");
     }

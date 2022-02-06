@@ -3,14 +3,13 @@ import {
   introHeading,
   introText,
   slogan,
-} from "../constants/appConstants.mjs";
+} from "./constants/appConstants.mjs";
 
 import { typeWrite } from "./utils/string.mjs";
 
 const loadingDOM = document.getElementById("intro-loading");
 const introDOM = document.getElementById("intro");
 const headerDOM = document.getElementById("header");
-const containerDOM = document.querySelector(".main-container");
 
 loadingDOM.onanimationend = async () => {
   introDOM.removeChild(loadingDOM);

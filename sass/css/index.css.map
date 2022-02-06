@@ -1,11 +1,10 @@
 {
     "version": 3,
-    "mappings": "AGAA,AAAA,KAAK,CAAC;EACJ,aAAa,EAAE,eAAe;CAC/B;;AAED,AAAA,KAAK,CAAC;EACJ,aAAa,EAAE,eAAe;CAC/B;;AAED,AAAA,OAAO,CAAC;EACN,KAAK,EAAE,eAAe;CACvB;;AAED,AAAA,QAAQ,CAAC;EACP,KAAK,EAAE,gBAAgB;CACxB",
+    "mappings": "",
     "sources": [
         "../utils/index.scss",
         "../utils/_bem.scss",
-        "../utils/_functions.scss",
-        "../utils/_helper.scss"
+        "../utils/_functions.scss"
     ],
     "names": [],
     "file": "index.css"

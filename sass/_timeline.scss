@@ -1,0 +1,30 @@
+.timeline {
+  @include e(row) {
+    display: flex;
+    align-items: center;
+  }
+
+  @include e(date) {
+    padding-right: 30px;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      background-color: getColor("blue.60");
+      position: absolute;
+      top: 0;
+      right: -12px;
+    }
+  }
+
+  @include e(text) {
+    position: relative;
+    border-left: 5px solid getColor("blue.60");
+    padding: 10px 0px 10px 30px;
+    white-space: nowrap;
+  }
+}

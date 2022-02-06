@@ -12,14 +12,14 @@
     }
   }
 
-  @include e(description){
+  @include e(description) {
     font-size: 1.2rem;
   }
 
-  @include e(slogan){
-    font-size: 1rem;
+  @include e(slogan) {
+    font-size: 1.5rem;
     font-style: oblique;
-    margin-top: 10px;
+    margin-top: 1rem;
+    color: getColor("yellow.40");
   }
-
 }

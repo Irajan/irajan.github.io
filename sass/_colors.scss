@@ -1,16 +1,24 @@
 $colorMap: (
   "white": (
     "base": #fff,
+    "transparent": #fffa,
   ),
   "black": (
     "base": #000,
+    "transparent": #000a,
   ),
   "blue": (
     "60": #97e6f1,
     "20": #e7f6fa,
+    "transparent": #97e6f1aa,
   ),
   "grey": (
+    "10": #ededed,
     "40": #c4c4c4,
+  ),
+  "yellow": (
+    "40": #fcfc00,
+    "60": #ffc107,
   ),
 );
 
