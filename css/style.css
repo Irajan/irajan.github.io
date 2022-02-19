@@ -5,8 +5,15 @@
           box-sizing: border-box;
 }
 
+:root {
+  --background-clr: #fff;
+  --font-clr: #000;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Courier New", Courier, monospace;
+  background-color: var(--background-clr);
 }
 
 ul {
@@ -15,7 +22,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--font-clr);
 }
 
 button {
@@ -87,10 +94,6 @@ button {
   gap: 0.5rem;
 }
 
-.icon-text:hover {
-  background-color: #e7f6fa;
-}
-
 .icon-text__text:hover {
   text-decoration: underline;
 }
@@ -105,12 +108,25 @@ button {
 .info {
   margin: 1.5rem;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--background-clr);
+  color: var(--font-clr);
 }
 
 .info__text {
   font-size: 1.2rem;
   text-align: justify;
+}
+
+.info__profile {
+  float: right;
+  padding: 0px 0px 30px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .info__profile {
+    margin: 20px auto;
+    float: none;
+  }
 }
 
 .info__sub-header {
@@ -146,6 +162,17 @@ button {
       flex-wrap: wrap;
 }
 
+@media screen and (max-width: 768px) {
+  .jick-saw__card {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .jick-saw__card:nth-of-type(even) {
   border-top-left-radius: 20px;
 }
@@ -154,6 +181,15 @@ button {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .jick-saw__card:nth-of-type(even) .jick-saw__content,
+  .jick-saw__card:nth-of-type(even) .jick-saw__img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 .jick-saw__content {
@@ -208,6 +244,10 @@ button {
   background-color: #97e6f1;
 }
 
+.jick-saw__hidden-btn a {
+  color: #000;
+}
+
 .loading:after {
   content: "";
   -webkit-animation: add-ellipse 2s linear 0.5s 2;
@@ -250,8 +290,8 @@ button {
 }
 
 .picture--large {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
 }
 
 .picture--small {
@@ -306,6 +346,10 @@ button {
   white-space: nowrap;
 }
 
+.toggler {
+  outline: none;
+}
+
 .toggler__input {
   display: none;
 }
@@ -350,7 +394,8 @@ button {
 .footer {
   margin: 1.5rem;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--background-clr);
+  color: var(--font-clr);
 }
 
 .m-1 {
@@ -373,12 +418,24 @@ button {
   margin-bottom: 2rem !important;
 }
 
+@media screen and (min-width: 768px) {
+  .md-mb-2 {
+    margin-bottom: 2rem !important;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem !important;
 }
 
 .ml-1 {
   margin-left: 1rem !important;
+}
+
+@media screen and (min-width: 768px) {
+  .md-ml-1 {
+    margin-left: 1rem !important;
+  }
 }
 
 .right {
@@ -391,6 +448,18 @@ button {
 
 .f-right {
   float: right !important;
+}
+
+@media screen and (min-width: 768px) {
+  .md-f-left {
+    float: left !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .md-f-right {
+    float: right !important;
+  }
 }
 
 .no-display {
@@ -447,5 +516,10 @@ button {
 
 .gap-3 {
   gap: 3rem !important;
+}
+
+.f-wrap {
+  -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
 }
 /*# sourceMappingURL=style.css.map */

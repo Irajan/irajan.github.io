@@ -1,3 +1,5 @@
+@import "../breakpionts";
+
 .m-1 {
   margin: 1rem !important ;
 }
@@ -18,12 +20,24 @@
   margin-bottom: 2rem !important;
 }
 
+.md-mb-2 {
+  @media screen and (min-width: $md) {
+    margin-bottom: 2rem !important;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem !important;
 }
 
 .ml-1 {
   margin-left: 1rem !important;
+}
+
+.md-ml-1 {
+  @media screen and (min-width: $md) {
+    margin-left: 1rem !important;
+  }
 }
 
 .right {
@@ -36,6 +50,18 @@
 
 .f-right {
   float: right !important;
+}
+
+.md-f-left {
+  @media screen and (min-width: $md) {
+    float: left !important;
+  }
+}
+
+.md-f-right {
+  @media screen and (min-width: $md) {
+    float: right !important;
+  }
 }
 
 .no-display {
@@ -80,4 +106,8 @@
 
 .gap-3 {
   gap: 3rem !important;
+}
+
+.f-wrap {
+  flex-wrap: wrap !important;
 }

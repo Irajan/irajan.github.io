@@ -5,10 +5,6 @@
   align-items: center;
   gap: 0.5rem;
 
-  &:hover {
-    background-color: getColor("blue.20");
-  }
-
   @include e(text) {
     &:hover {
       text-decoration: underline;
