@@ -1,13 +1,27 @@
+@import "./breakpionts";
+
 .jick-saw {
   @include e(card) {
     display: flex;
     flex-wrap: wrap;
+
+    @media screen and (max-width: $md) {
+      align-items: center;
+      justify-content: center;
+    }
 
     &:nth-of-type(even) {
       border-top-left-radius: 20px;
 
       .jick-saw__content {
         order: 2;
+      }
+
+      @media screen and (max-width: $md) {
+        .jick-saw__content,
+        .jick-saw__img {
+          order: 1;
+        }
       }
     }
   }

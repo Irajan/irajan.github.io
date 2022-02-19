@@ -2,6 +2,7 @@ $togglerWidth: 80px;
 $togglerOffSet: 3px;
 
 .toggler {
+  outline: none;
   @include e(input) {
     display: none;
     &:checked + .toggler__label {
@@ -30,8 +31,8 @@ $togglerOffSet: 3px;
     &::before {
       content: "";
       display: block;
-      height: $togglerWidth/2 - $togglerOffSet * 2;
-      width: $togglerWidth/2 - $togglerOffSet * 2;
+      height: $togglerWidth / 2 - $togglerOffSet * 2;
+      width: $togglerWidth / 2 - $togglerOffSet * 2;
       border-radius: 50%;
 
       position: absolute;
