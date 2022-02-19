@@ -3,7 +3,8 @@
 .info {
   margin: 1.5rem;
   padding: 20px;
-  background-color: getColor("white.base");
+  background-color: var(--background-clr);
+  color: var(--font-clr);
 
   @include e(text) {
     font-size: 1.2rem;

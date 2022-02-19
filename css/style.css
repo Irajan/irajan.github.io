@@ -5,8 +5,15 @@
           box-sizing: border-box;
 }
 
+:root {
+  --background-clr: #fff;
+  --font-clr: #000;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Courier New", Courier, monospace;
+  background-color: var(--background-clr);
 }
 
 ul {
@@ -15,7 +22,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--font-clr);
 }
 
 button {
@@ -87,10 +94,6 @@ button {
   gap: 0.5rem;
 }
 
-.icon-text:hover {
-  background-color: #e7f6fa;
-}
-
 .icon-text__text:hover {
   text-decoration: underline;
 }
@@ -105,7 +108,8 @@ button {
 .info {
   margin: 1.5rem;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--background-clr);
+  color: var(--font-clr);
 }
 
 .info__text {
@@ -240,6 +244,10 @@ button {
   background-color: #97e6f1;
 }
 
+.jick-saw__hidden-btn a {
+  color: #000;
+}
+
 .loading:after {
   content: "";
   -webkit-animation: add-ellipse 2s linear 0.5s 2;
@@ -282,8 +290,8 @@ button {
 }
 
 .picture--large {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
 }
 
 .picture--small {
@@ -386,7 +394,8 @@ button {
 .footer {
   margin: 1.5rem;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--background-clr);
+  color: var(--font-clr);
 }
 
 .m-1 {
