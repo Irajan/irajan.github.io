@@ -18,8 +18,10 @@
   @include e(profile) {
     float: right;
     padding: 0px 0px 30px 20px;
+
     @media screen and (max-width: $md) {
       margin: 20px auto;
+      padding: 0px 0px 30px 0px;
       float: none;
     }
   }
