@@ -1,6 +1,10 @@
-.loading:after {
-  content: "";
-  animation: add-ellipse 2s linear 0.5s 2;
+.loading {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+
+  &:after {
+    content: "";
+    animation: add-ellipse 2s linear 0.5s 2;
+  }
 }
 
 @keyframes add-ellipse {
