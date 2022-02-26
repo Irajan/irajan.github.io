@@ -5,6 +5,13 @@ import {
   slogan,
 } from "./constants/appConstants.mjs";
 
+import {
+  darkBackground,
+  lightBackground,
+  darkFont,
+  lightFont,
+} from "./constants/colors.mjs";
+
 import { typeWrite } from "./utils/string.mjs";
 
 const introDOM = document.getElementById("intro");
@@ -12,15 +19,7 @@ const headerDOM = document.getElementById("header");
 const loadingDOM = document.getElementById("intro-loading");
 
 const root = document.querySelector(":root");
-const rootStyle = getComputedStyle(root);
 const toggleBtn = document.getElementById("toggle");
-
-console.log(toggleBtn);
-
-const darkFont = "#97e6f1";
-const darkBackground = "#000";
-const lightFont = "#000";
-const lightBackground = "#fff";
 
 toggleBtn.addEventListener("change", function (e) {
   const currentValue = e.target.checked;
