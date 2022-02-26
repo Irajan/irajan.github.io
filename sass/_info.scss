@@ -6,6 +6,10 @@
   background-color: var(--background-clr);
   color: var(--font-clr);
 
+  @media screen and (max-width: $md) {
+    margin: 0;
+  }
+
   @include e(text) {
     font-size: 1.2rem;
     text-align: justify;
